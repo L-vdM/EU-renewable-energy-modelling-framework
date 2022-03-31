@@ -1,0 +1,5 @@
+RHO = 998 #[kg/m3]
+GRAVITY = 9.81 #[kg/m3]
+MW_TO_WATT = 1e6 #[m/s2]
+PI = 3.141592653589793
+KELVIN = 273.15 
