@@ -4,7 +4,7 @@ import glob
 # =============================================================================
 # 0. general sittings
 # =============================================================================
-dir_main = '/Users/lieke/Documents/01-diy-model/cleaned_for_online/'
+dir_main = 'your_directory'
 # set directory of model function files
 dir_functions = dir_main + 'model/'
 # timestep
