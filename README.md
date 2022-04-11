@@ -13,10 +13,13 @@ Create a new virtual environment and install the project requirements from the r
 ### Define input data 
 
 Then, set-up a new project for your own by:
-- downloading (daily) meteorological input data. Make sure to have a seperate netcdf for each variable. 
+- downloading (daily) meteorological input data (e.g. [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview). Make sure to have a seperate netcdf for each variable. 
 - regridding runoff data to the 0.5x0.5 grid of routing scheme (input_files/local-drain-direction/lddsound.nc)
 - updating the references, directories and file names of the input data in the config.py file
 - costumizing the input parameters as wanted in the config.py file
+
+The framework can take seperate runs (e.g. a seperate netcdf file for each year, or an ensemble). It will use the climate files with the name of the run in it for each defined run. So make sure that climatefiles that are input for one run have the name of the run in the filename (could be a year).
+NOTE: The hydropower dispatch model assumes perfect foresight for the length of the timeseries in each run. To take a longer period , timemerge the input files into a single run. 
 
 If meteorological input data is is at a different grid than the installed capacities, make sure to  regrid the one of the two. 
 
