@@ -99,12 +99,10 @@ The results can be found in the  output file.
 ```
 
 ## Example input and output data
-If you are interested in the output data from the work 
+If you are interested in the output data from the work submitted to publish or have difficulty finding input data feel free to contact me.
 
 
-## Contributing to this framework
-Contributions to this framework are greatly appreciated and encouraged.
+## Other questions or Contributions to this framework
+Contributions to this framework are appreciated and encouraged.
 
-To contribute an update simply:
-* Submit an issue describing your proposed change to the repo in question.
-* or feel free to contact me directly. 
+To contribute an update or if you have any other questions feel free to contact me.
