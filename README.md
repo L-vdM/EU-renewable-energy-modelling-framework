@@ -21,7 +21,7 @@ Then, set-up a new project for your own by:
 The framework can take seperate runs (e.g. a seperate netcdf file for each year, or an ensemble). It will use the climate files with the name of the run in it for each defined run. So make sure that netcdffiles that are input for the same run have the name of the run in the filename (could be a year).
 NOTE: The hydropower dispatch model assumes perfect foresight for the length of the timeseries in each run. To take a longer period, timemerge the input files into a single run. 
 
-If meteorological input data is is at a different grid than the installed capacities, make sure to  regrid the one of the two. 
+If meteorological input data is is at a different grid than the installed capacities, make sure to  regrid the of the two. 
 
 The required climate input data is:
 
