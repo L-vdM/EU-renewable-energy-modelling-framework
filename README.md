@@ -40,7 +40,7 @@ You are now ready to get started,.
 ### Running the model
 To run the model run the 00_run.py file.
 
-## Generated Project Contents
+## Project Contents
 Depending upon configurations when creating the project, the structure will look similar to the below:
 The results can be found in the  output file. 
 
