@@ -13,7 +13,7 @@ Create a new virtual environment and install the project requirements from the r
 ### Define input data 
 
 Then, set-up a new project for your own by:
-- downloading (daily) meteorological input data (e.g. [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview). Make sure to have a seperate netcdf for each variable. 
+- downloading (daily) meteorological input data (e.g. [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview) . Make sure to have a seperate netcdf for each variable. 
 - regridding runoff data to the 0.5x0.5 grid of routing scheme (input_files/local-drain-direction/lddsound.nc)
 - updating the references, directories and file names of the input data in the config.py file
 - costumizing the input parameters as wanted in the config.py file
