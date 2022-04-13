@@ -89,7 +89,7 @@ kx = config.kx
 
 for f in glob.glob(dir_disout+"*.nc"):
     dis_accu = xr.open_mfdataset(f)
-    da = dis_accu.drop('ro')
+    da = dis_accu.drop(var1)
 
     for i,t in enumerate(da.time):
         if i ==0 :
