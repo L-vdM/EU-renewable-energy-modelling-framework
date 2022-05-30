@@ -1,5 +1,4 @@
-_Note: The pulication in which this work is described is currently under review. We ask you kindly to cite it when using any of the modules. The reference to it will be posted here upon publication. 
-_
+*Note: The pulication in which this work is described is currently under review. We ask you kindly to cite it when using any of the modules. The reference to it will be posted here upon publication.*
 # EU-renewable-energy-modelling-framework
 
 This is a renewable energy modelling framework that was used to define meterological drivers of extreme events in the European renewable electrcity system, although it might be usefull for other puproses. It contains modules for the computatation of 1) wind energy production, 2) photvoltaic solar energy production, 3) run-of-river hydropower production, 4) reservoir hydropower inflow, 5) reservoir hydropower dispatch and 6) national demand. So far it has been run on daily resolution, but the model could be adjusted to deal with different timesteps. The current project is set-up to run at ERA5 grid for PV solar and wind production, and at 0.5x0.5 grid for run-of-river and reservoir hydropower prodcution.
