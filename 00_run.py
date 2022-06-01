@@ -171,8 +171,10 @@ for r in config.runs:
          ds_demand.where(ds_demand['time.dayofweek']>=5, drop=True)],
         'period')
     ds_demand['period'] = ['weekday', 'weekend']
-    # select only the countries for which we have fitted data:
-    ds_demand = ds_demand.sel(country = fv.country.data)
+    # select only the countries that are in the input data and for which we have fitted data:
+    countries = list(set(np.unique(ds_demand.country)).intersection(set(np.unique(fv.country.data))))
+    ds_demand = ds_demand.sel(country = countries)
+    fv = fv.sel(country = countries)
     # compute demand with fit variables
     ds_demand = demand.compute_demand(ds_demand, fv)
     # remove period dimension
