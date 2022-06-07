@@ -9,7 +9,7 @@ This model has been validated against [ENTSO-E transparancy](https://transparenc
 ## Getting Started With This Framework
 
 To get running, download this repository using the download button.
-Create a new virtual environment and install the project requirements from the requirements.txt file.
+Create a new virtual environment from the environment.yamls file (conda env create --file=environment.yaml).
 
 
 ### Define input data 
