@@ -1,4 +1,17 @@
 
+# Citing
+If you use this framework, or adapt it for your work, please cite our (in review) publication [Extreme events in the European renewable power system: validation of a modeling framework to estimate renewable electricity production and demand from meteorological data](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4095758) 
+<pre><code>@inproceedings{VanderMost2022,
+author = {van der Most, Lieke and van der Wiel, Karin and Benders, Rene and Gerbens-Leenes, Winnie and Kerkmans, Peter and Bintanja, Richard},
+doi = {10.2139/ssrn.4095758},
+file = {:Users/lieke/Documents/03-literature/van der Most et al. - 2022 - Extreme Events in the European Renewable Power System Validation of a Modeling Framework to Estimate Renewa.pdf:pdf},
+journal = {SSRN Electronic Journal},
+keywords = {climate variability,compound events,electricity model,european energy transition,extreme events,extreme weather impacts,hydropower generation,model validation},
+title = {Extreme Events in the European Renewable Power System: Validation of a Modeling Framework to Estimate Renewable Electricity Production and Demand from Meteorological Data},
+year = {2022}
+}
+</code></pre>
+
 # EU-renewable-energy-modelling-framework
 
 This is a renewable energy modelling framework that was used to define meterological drivers of extreme events in the European renewable electrcity system, although it might be usefull for other puproses. It contains modules for the computatation of 1) wind energy production, 2) photvoltaic solar energy production, 3) run-of-river hydropower production, 4) reservoir hydropower inflow, 5) reservoir hydropower dispatch and 6) national demand. So far it has been run on daily resolution, but the model could be adjusted to deal with different timesteps. The current project is set-up to run at ERA5 grid for PV solar and wind production, and at 0.5x0.5 grid for run-of-river and reservoir hydropower prodcution.
@@ -109,20 +122,6 @@ Contributions to this framework are appreciated and encouraged.
 
 To contribute an update or if you have any other questions feel free to contact me.
 
-
-</code></pre>
-
-# Citing
-If you use this framework, or adapt it for your work, please cite our (in review) publication [Extreme events in the European renewable power system: validation of a modeling framework to estimate renewable electricity production and demand from meteorological data](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4095758) 
-<pre><code>@inproceedings{VanderMost2022,
-author = {van der Most, Lieke and van der Wiel, Karin and Benders, Rene and Gerbens-Leenes, Winnie and Kerkmans, Peter and Bintanja, Richard},
-doi = {10.2139/ssrn.4095758},
-file = {:Users/lieke/Documents/03-literature/van der Most et al. - 2022 - Extreme Events in the European Renewable Power System Validation of a Modeling Framework to Estimate Renewa.pdf:pdf},
-journal = {SSRN Electronic Journal},
-keywords = {climate variability,compound events,electricity model,european energy transition,extreme events,extreme weather impacts,hydropower generation,model validation},
-title = {Extreme Events in the European Renewable Power System: Validation of a Modeling Framework to Estimate Renewable Electricity Production and Demand from Meteorological Data},
-year = {2022}
-}
 
 # license
 [MIT](https://github.com/L-vdM/EU-renewable-energy-modelling-framework/blob/main/LICENSE.md)
