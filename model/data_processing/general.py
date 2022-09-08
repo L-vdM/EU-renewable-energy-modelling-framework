@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 import xarray as xr
 import pandas as pd
 import numpy as np
+
 # from sklearn.metrics import mean_squared_error
 # from scipy import stats
 
@@ -16,11 +17,12 @@ import numpy as np
 #         return (d * w).sum() / w.sum()
 #     except ZeroDivisionError:
 #         return d.mean()
-    
+
+
 def convert_doy_to_date(doy):
     """
     converts year and day of year to datetime object
-    
+
     parameters
     ----------
     doy (tuple or list): (year, dayofyear)
@@ -31,13 +33,14 @@ def convert_doy_to_date(doy):
     """
     return datetime(doy[0], 1, 1) + timedelta(doy[1] - 1)
 
+
 # def xr_lat_lon_to_flat_df(ds, var):
 #     df = ds[var].to_dataframe()
 #     df.reset_index(inplace=True, level = ['lat', 'lon'])
 #     df = df.dropna()
 #     df['loc'] = df[['lat', 'lon']].apply(tuple, axis=1)
 
-#     try: 
+#     try:
 #         df = df.drop(['lat', 'lon', 'country'], axis=1)
 #     except:
 #         df = df.drop(['lat', 'lon'], axis=1)
@@ -46,7 +49,7 @@ def convert_doy_to_date(doy):
 
 # def is_outlier(points, thresh=3.5):
 #     """
-#     Returns a boolean array with True if points are outliers and False 
+#     Returns a boolean array with True if points are outliers and False
 #     otherwise.
 
 #     Parameters:
@@ -64,7 +67,7 @@ def convert_doy_to_date(doy):
 #     ----------
 #         Boris Iglewicz and David Hoaglin (1993), "Volume 16: How to Detect and
 #         Handle Outliers", The ASQC Basic References in Quality Control:
-#         Statistical Techniques, Edward F. Mykytka, Ph.D., Editor. 
+#         Statistical Techniques, Edward F. Mykytka, Ph.D., Editor.
 #     """
 #     if len(points.shape) == 1:
 #         points = points[:,None]
@@ -103,7 +106,7 @@ def convert_doy_to_date(doy):
 #                 if (S[xvar][q]-S[xvar][k])>L and (S[xvar][q-1]-S[xvar][q]<L or S[xvar][q-1]+S[xvar][q]<L):
 #                     slope, intercept, r_value, p_value, std_err = stats.linregress(
 #                         S[k:q][xvar], S[k:q][yvar])
-          
+
 #                     y_fit = intercept + S[k:q][xvar] * slope
 #                     rms = mean_squared_error(S[k:q][yvar], y_fit, squared=False)
 #                     E = rms
@@ -120,6 +123,7 @@ def convert_doy_to_date(doy):
 #     dfc[dimname] = var_values
 #     return dfc
 
+
 def sum_per_region(region_mask, ds):
-    dfc = (region_mask.mask * ds).sum(dim=['lat', 'lon'])
+    dfc = (region_mask.mask * ds).sum(dim=["lat", "lon"])
     return dfc

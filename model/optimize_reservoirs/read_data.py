@@ -1,7 +1,7 @@
 # import pandas as pd
 
 # def _add_netto_demand(df):
-#     """ 
+#     """
 #     add netto demand to dataset
 
 #     parameters
@@ -17,7 +17,7 @@
 #     return df
 
 # def read_xarrays_to_df(demandf, inflowf, wind_and_solar, mapping):
-#     """ 
+#     """
 #     read netcdf demand, inflow and wind and solar production and join in pandas dataframe
 
 #     parameters
@@ -36,14 +36,14 @@
 #     # dropweighetd temperature data from demand
 #     demand = demand.drop(['temp'], axis=1)
 
-#     ### open inflow [MWh]                    
+#     ### open inflow [MWh]
 #     inflow = xr.open_dataset(inflowf)
 #     ### open productio.
 #     prod = xr.open_dataset(wind_and_solar)
 #     # sum all vars in production (wind and solar)
 #     vars_to_sum = list(prod.keys())
 #     prod_total = prod[vars_to_sum].to_array().sum("variable").to_dataset(name='wind_solar')
-    
+
 #     ### concat data
 #     dc = demand.drop(['period']).to_dataframe()
 #     ic = inflow.to_dataframe()
