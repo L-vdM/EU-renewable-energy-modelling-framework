@@ -2,16 +2,16 @@ import numpy as np
 import glob
 
 # =============================================================================
-# 0. general sittings
+# 0. set functions file path
 # =============================================================================
-dir_main = 'your_directory'
+dir_main = "/Users/lieke/Documents/01-diy-model/github/EU-renewable-energy-modelling-framework/"
 # set directory of model function files
-dir_functions = dir_main + 'model/'
+dir_functions = dir_main + "model/"
 # timestep
 dt = 24
-# set namee of author and project for output files 
-author_name = 'author name'
-project_name = 'project name'
+# set name of author and project for output files
+author_name = "Lieke vd Most"
+project_name = "ICEVEPS"
 
 
 # =============================================================================
@@ -19,10 +19,11 @@ project_name = 'project name'
 # =============================================================================
 ## workstation
 ## computer
-dir_rawdata = dir_main + 'input_files/'
-dir_climate = dir_main + 'input_files/climate_data/'
-# set output dir to create
-dir_out = dir_main +'ouput/run3/'
+dir_rawdata = dir_main + "input_files/"
+dir_climate = dir_main + 'climate_input/'
+dir_climate  = '/Users/lieke/Documents/01-diy-model/01pub_model/climate_input/'
+## Make sure not to overwrite files!
+dir_out = dir_main + 'output/'
 
 
 # =============================================================================
@@ -167,7 +168,7 @@ mean_reservoir_cycle = dispatch_input_folder + 'mean_reservoir_ERA5.csv'
 mean_inflow_cycle = dispatch_input_folder + 'mean_inflow_ERA5.csv'
 
 storage_capacities = (
-    dir_rawdata + "hydropower_dispatch/storage_capacities3.csv"
+    dir_rawdata + "hydropower_dispatch/storage_capacities.csv"
 )  # country specific storage capacities
 filling_level_at_start = (
     dir_rawdata + "hydropower_dispatch/reservoir_filling_level_at_start.csv"
