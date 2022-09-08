@@ -2,14 +2,14 @@ import numpy as np
 import glob
 
 # =============================================================================
-# 0. set functions file path
+# 0. general sittings
 # =============================================================================
 dir_main = 'your_directory'
 # set directory of model function files
-dir_functions = dir_main + "model/"
+dir_functions = dir_main + 'model/'
 # timestep
 dt = 24
-# set name of author and project for output files
+# set namee of author and project for output files 
 author_name = 'author name'
 project_name = 'project name'
 
@@ -21,8 +21,9 @@ project_name = 'project name'
 ## computer
 dir_rawdata = dir_main + 'input_files/'
 dir_climate = dir_main + 'input_files/climate_data/'
-## Make sure not to overwrite files!
-dir_out = dir_main +"ouput/run01/"
+# set output dir to create
+dir_out = dir_main +'ouput/run3/'
+
 
 # =============================================================================
 # 2. set regions
@@ -94,7 +95,7 @@ dis_varname = "discharge"
 # =============================================================================
 # 4. settings for routing - takes > 12 hours for 2000 years!
 # =============================================================================
-route_runoff = True
+route_runoff = False
 route_runoff_submodules = dict(make_lddRoutingLayers=True)
 
 # =============================================================================
@@ -103,9 +104,9 @@ route_runoff_submodules = dict(make_lddRoutingLayers=True)
 
 # mean discharges to determine fraction of discharge used
 dis_dir0 = dir_out + "discharge/"
-make_mean_yearly_discharge = True
+make_mean_yearly_discharge = False
 mean_discharges_dir = dis_dir0
-mean_discharge_file = dir_rawdata  + "mean_yearly_discharge.nc"
+mean_discharge_file = dir_rawdata  + "mean_yearly_discharge2.nc"
 
 reservoir_efficiency = 0.9
 ror_efficiency = 0.9
@@ -157,28 +158,16 @@ a_offshore = 0.11  # offshore roughness energy_type [-]
 # =============================================================================
 # 5. settings for optimization
 # =============================================================================
-
+optimization = 'rolling' # 'rolling' or 'foresight'
 dispatch_input_folder = dir_rawdata +'hydropower_dispatch/'
-
-# mean_weekend_demand = dispatch_input_folder + 'mean_weekend_netto_demand_PD_VAREX_sc01.csv'
-# mean_weekday_demand = dispatch_input_folder + 'mean_weekday_netto_demand_PD_VAREX_sc01.csv'
-# mean_reservoir_cycle = dispatch_input_folder + 'mean_reservoir_PD_VAREX_sc01.csv'
-# mean_inflow_cycle = dispatch_input_folder + 'mean_inflow_PD_VAREX_sc01.csv'
 
 mean_weekend_demand = dispatch_input_folder + 'mean_weekend_netto_demand_ERA5.csv'
 mean_weekday_demand = dispatch_input_folder + 'mean_weekday_netto_demand_ERA5.csv'
 mean_reservoir_cycle = dispatch_input_folder + 'mean_reservoir_ERA5.csv'
 mean_inflow_cycle = dispatch_input_folder + 'mean_inflow_ERA5.csv'
 
-# dispatch_countries = ['NOR', 'SWE', 'ESP', 'FRA', 'CHE', 'ITA']
-
-dispatch_countries = ['AUT', 'BIH', 'BEL', 'BGR', 'CHE', 'CZE', 'DEU', 'GRC', 'ESP', 'FIN',
-                      'FRA', 'HRV', 'HUN', 'IRL', 'ITA', 'LVA', 'MNE', 'MKD', 'NOR', 'POL',
-                      'PRT', 'ROU', 'SRB', 'SWE', 'SVN', 'SVK', 'GBR', 'ALB', 'UKR', 'MDA',
-                      'CYP', 'LUX', 'MLT', 'NLD', 'LTU', 'ISL', 'DNK', 'EST', 'TUR']
-
 storage_capacities = (
-    dir_rawdata + "hydropower_dispatch/storage_capacities2.csv"
+    dir_rawdata + "hydropower_dispatch/storage_capacities3.csv"
 )  # country specific storage capacities
 filling_level_at_start = (
     dir_rawdata + "hydropower_dispatch/reservoir_filling_level_at_start.csv"
