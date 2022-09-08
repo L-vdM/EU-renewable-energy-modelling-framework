@@ -381,6 +381,12 @@ for r in config.runs:
 
     print("done with :" + os.path.basename(tempf).replace(config.t2m_varname, "prod"))
 
+
 if config.agg == True:
     import agg_countries
+if config.optimization  == 'rolling':
+    import compute_rolling_hydro_dispatch
+elif config.optimization == 'foresight':
     import compute_hydro_dispatch
+else:
+    print('optimization type unknown. choose between rolling or foresight')
