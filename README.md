@@ -63,7 +63,8 @@ The results can be found in the  output file.
 ```                                                                                     
 ├── .00_run.py                                    <-  run this file to start run                  
 ├── agg_countries.py                              <-  module to aggregate countries, imported into 00_run.py.                     
-├── compute_hydro_dispatch.py                     <-  module to acompute hydro dispatch, imported into 00_run.py.                                             
+├── compute_hydro_dispatch.py                     <-  module to compute hydro dispatch, imported into 00_run.py.  
+├── compute_rolling_hydro_dispatch.py             <-  module to compute rolling hydro dispatch, imported into 00_run.py.  
 ├── config.py                                     <-  configuration of the model run.
 ├── input_files                                   <-  direcotry with input files for run                  
 │   ├── EEZ_land_union_v3_202003        <-  country borders                                             
@@ -103,7 +104,8 @@ The results can be found in the  output file.
 │   │   └── wind.py                                                         
 │   ├── optimize_reservoirs             <- scripts used to generate reservoir dispatch                                      
 │   │   ├── read_data.py                                                        
-│   │   └── reservoir_model.py                                                      
+│   │   └── reservoir_model.py
+│   │   └── reservoir_model_rolling.py
 │   └── routing                         <- script for routing                                                           
 │       └── routing.py                                                 
 ├── ouput                                                          
