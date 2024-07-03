@@ -1,11 +1,12 @@
 
 # Citing
-If you use this framework, or adapt it for your work, please cite our (in review) publication [Extreme events in the European renewable power system: validation of a modeling framework to estimate renewable electricity production and demand from meteorological data](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4095758) 
+If you use this framework, or adapt it for your work, please cite our publication [Extreme events in the European renewable power system: validation of a modeling framework to estimate renewable electricity production and demand from meteorological data](https://doi.org/10.1016/j.rser.2022.112987)
 <pre><code>@inproceedings{VanderMost2022,
 author = {van der Most, Lieke and van der Wiel, Karin and Benders, Rene and Gerbens-Leenes, Winnie and Kerkmans, Peter and Bintanja, Richard},
-doi = {10.2139/ssrn.4095758},
-file = {:Users/lieke/Documents/03-literature/van der Most et al. - 2022 - Extreme Events in the European Renewable Power System Validation of a Modeling Framework to Estimate Renewa.pdf:pdf},
-journal = {SSRN Electronic Journal},
+doi = {https://doi.org/10.1016/j.rser.2022.112987},
+journal = {Renewable and Sustainable Energy Reviews},
+volume = {170},
+pages = {112987},
 keywords = {climate variability,compound events,electricity model,european energy transition,extreme events,extreme weather impacts,hydropower generation,model validation},
 title = {Extreme Events in the European Renewable Power System: Validation of a Modeling Framework to Estimate Renewable Electricity Production and Demand from Meteorological Data},
 year = {2022}
