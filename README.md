@@ -1,7 +1,7 @@
 
 # Citing
 If you use this framework, or adapt it for your work, please cite our publication [Extreme events in the European renewable power system: validation of a modeling framework to estimate renewable electricity production and demand from meteorological data](https://doi.org/10.1016/j.rser.2022.112987)
-<pre><code>@inproceedings{VanderMost2022,
+<pre><code>@article{VanderMost2022,
 author = {van der Most, Lieke and van der Wiel, Karin and Benders, Rene and Gerbens-Leenes, Winnie and Kerkmans, Peter and Bintanja, Richard},
 doi = {https://doi.org/10.1016/j.rser.2022.112987},
 journal = {Renewable and Sustainable Energy Reviews},
